@@ -1,0 +1,9 @@
+# Copy to a real tfvars file (or use environments/<env>.tfvars) and fill in.
+# Do NOT commit files containing secrets or real network ranges.
+
+project     = "dtl"
+environment = "phase2"
+location    = "japaneast"
+
+# Real IBM VPN / AGH source ranges allowed to reach the App Gateway on 443.
+allowed_vpn_source_cidrs = ["203.0.113.0/24"]
